@@ -1,0 +1,88 @@
+/*------------------------------------*/
+/*	Slider Section					  */
+/*------------------------------------*/
+
+.slides {
+	margin: 1px 0 0;
+
+	.slide {
+	    padding: 0 2%;
+	    position: relative;
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		.caption {
+			position: absolute;
+			top: 20%;
+    		left: 0;
+    		width: 410px;
+    		@include box-shadow(0px 0px 14px 0px rgba(0,0,0,0.5));
+    		background-color: $white;
+
+    		.left {
+    			width: 265px;
+    			float: left;
+    			background-color: $white;
+			    padding: 0 5px 0 35px;
+			    position: relative;
+
+			    &:after {
+			    	content: '';
+			    	@include arrow-right(10px, $white);
+			    	position: absolute;
+				    right: -10px;
+				    top: 25px;
+			    }
+
+    			h2 {
+    				font-size: 25px;
+    				line-height: 25px;
+    				color: $blue;
+    				text-transform: uppercase;
+				    letter-spacing: 1.5px;
+				    font-weight: 400;
+			        margin-bottom: 10px;
+    			}
+
+    			p {
+    				font-family: Arial, sans-serif;
+    				font-size: 11px;
+    				line-height: 11px;
+    				color: $gray-font;
+    			}
+    		}
+
+    		.right {
+    			width: 65px;
+    			float: left;
+    			background-color: $blue;
+			    padding: 0 15px 0 25px;
+    			color: $white;
+
+    			p {
+    				font-size: 11px;
+				    margin: 27px 0 0 0;
+
+    				&.price {
+    					font-size: 40px;
+    					position: relative;
+    					margin: 0 0 15px 0;
+
+    					.currency {
+							position: absolute;
+							top: 0;
+							right: 0;
+							font-size: 20px;
+						}
+    				}
+    			}
+    			//min-height: 109px;
+    		}
+
+		}
+	}
+
+}
+
