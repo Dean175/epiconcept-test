@@ -1,0 +1,104 @@
+/*------------------------------------*/
+/*	Services Section				  */
+/*------------------------------------*/
+
+.services {
+
+	margin-top: 70px;
+	background-color: $light-gray;
+	height: 134px;
+
+	p, h4 {
+		font-size: 10px;
+		line-height: 15px;
+		color: $gray-font;
+	}
+
+	.info-block,
+	.service {
+		float: left;
+		height: 100%;
+	}
+
+	.info-block {
+		width: 17%;
+		margin-left: 40px;
+		background-color: $gray;
+		position: relative;
+
+		p, h4 {
+			color: $white;
+		}
+
+		h4 {
+			text-transform: uppercase;
+		}
+
+		.info {
+			padding: 10px 25px;
+			p, h4 {
+				margin: 0;
+			}
+		}
+
+		.icon-info {
+			width: 20px;
+			height: 20px;
+			background: url('../svg/icons.svg') no-repeat;
+		    display: inline-block;
+		    background-position: 0 -20px;
+		    position: absolute;
+		    top: 0;
+		    left: -30px;
+		}
+	}
+
+	.service {
+		width: 9%;
+		text-align: center;
+		padding: 20px 11px 0;
+		border-right: 2px solid $white;
+
+		&:last-child {
+			border-right: 0;
+		}
+
+		.icon {
+			width: 60px;
+			height: 45px;
+			background: url('../svg/reassu.svg') no-repeat;
+		    display: inline-block;
+
+		    &.satisfait-rembourse {
+		    	background-position: 0 0;
+		    }
+
+			&.paiement {
+		    	background-position: -60px 0;
+		    }
+
+		    &.expedition {
+		    	background-position: -120px 0;
+		    }
+
+		    &.livraison {
+		    	background-position: 0 -45px;
+		    }
+
+		    &.garantie {
+		    	background-position: -60px -45px;
+		    }
+
+		    &.stock {
+		    	background-position: -120px -45px;
+		    }
+
+		    &.retours {
+		    	background-position: 0 -90px;
+		    }
+
+		}
+	}
+
+
+}
