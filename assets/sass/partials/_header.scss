@@ -1,0 +1,95 @@
+/*------------------------------------*/
+/*	Header Section					  */
+/*------------------------------------*/
+html, body {
+ font-family: $futura;
+ margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#logo {
+	width: 20%;
+	float: left;
+	background-color: $dark;
+	text-align: center;
+	padding: 14px 0;
+}
+
+#menu {
+	width: 80%;
+	float: left;
+	background-color: $lighter-black;
+
+	ul li{
+		list-style: none;
+		display: inline-block;
+
+		a {
+			color: $white;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+
+	.navigation {
+		width: 80%;
+		float: left;
+	    padding: 15px 0;
+
+	    nav {
+	    	a {
+	    		font-size: 12px;
+	    		line-height: 12px;
+	    		padding: 0 16px;
+	    		letter-spacing: 1px;
+	    	}
+	    }
+	}
+
+	.account-language {
+		width: 20%;
+		float: left;
+
+		.lang {
+		
+			li {
+				a {
+					font-size: 10px;
+					line-height: 10px;
+					padding: 0 5px 0 0;
+				}
+
+				&.active {
+					a {
+						text-decoration: underline;
+					}
+				}
+
+				.slash {
+					font-size: 10px;
+					line-height: 10px;
+					color: $white;
+				}
+			}
+		}
+	}
+
+
+}
+

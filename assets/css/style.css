@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'FuturaStd Book';
+  src: url("../fonts/futurastd-book.woff") format("woff"), url("../fonts/futurastd-book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+/*------------------------------------*/
+/*	Header Section					  */
+/*------------------------------------*/
+/* line 4, ../sass/partials/_header.scss */
+html, body {
+  font-family: "FuturaStd Book", sans-serif;
+  margin: 0; }
+
+/* line 9, ../sass/partials/_header.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 14, ../sass/partials/_header.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 20, ../sass/partials/_header.scss */
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto; }
+
+/* line 26, ../sass/partials/_header.scss */
+#logo {
+  width: 20%;
+  float: left;
+  background-color: #2e2e31;
+  text-align: center;
+  padding: 14px 0; }
+
+/* line 34, ../sass/partials/_header.scss */
+#menu {
+  width: 80%;
+  float: left;
+  background-color: #2e2e31; }
+  /* line 39, ../sass/partials/_header.scss */
+  #menu ul li {
+    list-style: none;
+    display: inline-block; }
+    /* line 43, ../sass/partials/_header.scss */
+    #menu ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase; }
+  /* line 50, ../sass/partials/_header.scss */
+  #menu .navigation {
+    width: 80%;
+    float: left;
+    padding: 15px 0; }
+    /* line 56, ../sass/partials/_header.scss */
+    #menu .navigation nav a {
+      font-size: 12px;
+      line-height: 12px;
+      padding: 0 16px;
+      letter-spacing: 1px; }
+  /* line 65, ../sass/partials/_header.scss */
+  #menu .account-language {
+    width: 20%;
+    float: left; }
+    /* line 72, ../sass/partials/_header.scss */
+    #menu .account-language .lang li a {
+      font-size: 10px;
+      line-height: 10px;
+      padding: 0 5px 0 0; }
+    /* line 79, ../sass/partials/_header.scss */
+    #menu .account-language .lang li.active a {
+      text-decoration: underline; }
+    /* line 84, ../sass/partials/_header.scss */
+    #menu .account-language .lang li .slash {
+      font-size: 10px;
+      line-height: 10px;
+      color: #ffffff; }
