@@ -89,6 +89,40 @@ p {
 				left: 0;
 				right: 0;
 				z-index: 10000;
+				background: rgba($blue, 0.5);
+				padding: 0;
+
+				li {
+					display: block;
+					float: left;
+					a {
+						padding: 0;
+					}
+
+					&.v-img {
+						width: 15%;
+					}
+
+					&.links {
+						width: 55%;
+
+						.left,
+						.right {
+							float: left;
+							width: 50%;
+
+							ul li {
+								float: none;
+							}
+						}
+					}
+
+					&.h-img {
+						width: 30%;
+					}
+
+				}
+
 	    	}
 	    }
 	}
