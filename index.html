@@ -4,6 +4,7 @@
 	<title>La Mode - Les Marques</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/jquery.bxslider.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
 	<header>
 		<div class="wrapper">
 			
-			<div class="clearfix">
+			<div class="nav-block clearfix">
 
 				<!-- Logo section -->
 				<section id="logo">
@@ -25,7 +26,53 @@
 						<nav>
 							<ul>
 								<li><a href="#">marques</a></li>
-								<li><a href="#">montres</a></li>
+								<li>
+									<a href="#">montres</a>
+									<ul class="submenu">
+										<li class="v-img"><img src="assets/img/h-watch.jpg" alt="watch"></li>
+										<li class="links">
+											<div class="left">
+												<ul>
+													<b>top marques</b>
+													<li><a href="#">adidas</a></li>
+													<li><a href="#">all blacks</a></li>
+													<li><a href="#">axcent of</a></li>
+													<li><a href="#">scandinavia</a></li>
+													<li><a href="#">beuchat</a></li>
+													<li><a href="#">breil</a></li>
+													<li><a href="#">casio</a></li>
+													<li><a href="#">cerruti 1881</a></li>
+													<li><a href="#">certus</a></li>
+													<li><a href="#">citizen</a></li>
+													<li><a href="#">cobra</a></li>
+													<li><a href="#">danish design</a></li>
+													<li><a href="#">diesel</a></li>
+												</ul>
+											</div><!-- .left -->
+											<div class="right">
+												<ul>
+													<b>matiere</b>
+													<li><a href="#">acier</a></li>
+													<li><a href="#">cuir &#38; tissu</a></li>
+													<li><a href="#">plastique</a></li>
+													<li><a href="#">résine &#38; caoutchou</a></li>
+												</ul>
+
+												<ul>
+													<b>cadran</b>
+													<li><a href="#">rond</a></li>
+													<li><a href="#">rectangle</a></li>
+													<li><a href="#">particulier</a></li>
+												</ul>
+											</div><!-- .left -->
+										</li>
+										<li class="h-img">
+											<img src="assets/img/opex.jpg" alt="opex">
+											<img src="assets/img/arck.jpg" alt="arck">
+											<a href="#">voir toutes les montres hommes</a>
+										</li>
+									</ul>
+								</li>
 								<li><a href="#">luxe</a></li>
 								<li><a href="#">bijoux</a></li>
 								<li><a href="#">bons plans</a></li>
@@ -68,6 +115,22 @@
 						</div><!-- .caption -->
 					</div><!-- .slide -->
 
+					<div class="slide">
+						<img src="assets/img/visuel_slider_2.jpg" alt="slide2">
+						<div class="caption right clearfix">
+
+							<div class="left">
+								<h2>patek philippe</h2>
+								<p>Mauris molestie, velit quis lobortis dictum, lacus nunc consequat nunc, ut lacinia nulla erat quis magnaliquam elementum. </p>
+							</div><!-- .left -->
+							<div class="right">
+								<p>à partir de</p>
+								<p class="price">2889 <span class="currency euro">&#8364;</span></p>
+							</div><!-- .right -->
+
+						</div><!-- .caption -->
+					</div><!-- .slide -->
+
 				</div><!-- .slides -->
 				
 			</section><!-- .hero-image -->
@@ -87,7 +150,9 @@
 						<h4>service client</h4>
 						<p>0 825 95 41 89</p>
 						<p>&#40;0,15<span class="currency euro">&#8364;</span>&#47;min&#41;</p>
-						<p>Du Lundi au Vendredi de 8h à 19h30</p>
+						<br />
+						<p>Du Lundi au Vendredi</p>
+						<p>de 8h à 19h30</p>
 						<p>Le samedi de 9h à 17h</p>
 					</div><!-- .info -->
 				</div><!-- .info-block -->
@@ -135,10 +200,14 @@
 	<footer>
 		
 		<div class="wrapper">
-			<p>2017 La Mode Les marques - Tous droits réservés Powered by <span><img src="assets/svg/wshop.svg" alt="wshop"></span></p>
+			<p>2017 La Mode Les marques - Tous droits réservés Powered by <span class="logo"><img src="assets/svg/wshop.svg" alt="wshop"></span></p>
 		</div>
 	
 	</footer>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.bxslider.min.js"></script>
+	<script src="assets/js/main.js"></script>
 
 </body>
 </html>

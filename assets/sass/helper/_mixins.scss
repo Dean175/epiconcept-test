@@ -1,3 +1,5 @@
+
+// ARROW DOWN
 @mixin arrow-down($size, $color) {
   width: 0; 
   height: 0; 
@@ -7,6 +9,7 @@
   border-top: $size solid $color;
 }
 
+// ARROW RIGHT
 @mixin arrow-right($size, $color) {
   width: 0; 
   height: 0; 
@@ -16,6 +19,7 @@
   border-left: $size solid $color;
 }
 
+// BOX SHADOW
 @mixin box-shadow($value...) {
 	-webkit-box-shadow: $value;
 	-moz-box-shadow: $value;

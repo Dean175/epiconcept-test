@@ -27,12 +27,22 @@ p {
 	margin: 0 auto;
 }
 
+.nav-block {
+	height: 85px;
+	position: relative;
+}
+
 #logo {
 	width: 18%;
 	float: left;
 	background-color: $dark;
 	text-align: center;
-	padding: 14px 0 14px 2%;
+	padding: 0 0 0 2%;
+	height: 100%;
+
+	img {
+		margin-top: 14px;
+	}
 }
 
 #menu {
@@ -40,6 +50,7 @@ p {
 	float: left;
 	background-color: $lighter-black;
 	padding-right: 2%;
+	height: 100%;
 
 	ul li{
 		list-style: none;
@@ -55,14 +66,29 @@ p {
 	.navigation {
 		width: 80%;
 		float: left;
-	    padding: 15px 0;
 
 	    nav {
+	    	ul {
+	    		margin: 0;
+	    	}
 	    	a {
 	    		font-size: 12px;
 	    		line-height: 12px;
-	    		padding: 0 16px;
+	    		padding: 36px 16px;
 	    		letter-spacing: 1px;
+	    		display: inline-block;
+
+	    		&:hover,
+	    		&:focus {
+	    			background-color: $blue;
+	    		}
+	    	}
+
+	    	.submenu {
+				position: absolute;
+				left: 0;
+				right: 0;
+				z-index: 10000;
 	    	}
 	    }
 	}

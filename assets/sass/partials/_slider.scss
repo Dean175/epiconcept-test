@@ -2,6 +2,11 @@
 /*	Slider Section					  */
 /*------------------------------------*/
 
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+}
+
 .slides {
 	margin: 1px 0 0;
 
@@ -9,23 +14,31 @@
 	    padding: 0 2%;
 	    position: relative;
 		img {
-			width: 100%;
+			max-width: 100%;
 			height: auto;
 		}
 
 		.caption {
 			position: absolute;
 			top: 20%;
-    		left: 0;
+    		left: 1%;
     		width: 410px;
-    		@include box-shadow(0px 0px 14px 0px rgba(0,0,0,0.5));
-    		background-color: $white;
+    		@include box-shadow(-4px 0px 8px 0px rgba(0, 0, 0, 0.2));
+    		height: 115px;
+            width: 430px;
+
+            &.right {
+                left: initial;
+                right: 4%;
+                top: 10%;
+            }
 
     		.left {
-    			width: 265px;
+                height: 100%;
+    			width: 54%;
     			float: left;
     			background-color: $white;
-			    padding: 0 5px 0 35px;
+			    padding: 0 1% 0 8%;
 			    position: relative;
 
 			    &:after {
@@ -55,11 +68,13 @@
     		}
 
     		.right {
-    			width: 65px;
+                height: 100%;
+    			min-width: 15%;
     			float: left;
     			background-color: $blue;
-			    padding: 0 15px 0 25px;
+			    padding: 0 2% 0 5%;
     			color: $white;
+                text-align: center;
 
     			p {
     				font-size: 11px;
@@ -67,13 +82,12 @@
 
     				&.price {
     					font-size: 40px;
-    					position: relative;
     					margin: 0 0 15px 0;
 
     					.currency {
-							position: absolute;
-							top: 0;
-							right: 0;
+							position: relative;
+							top: -20px;
+							left: -10px;
 							font-size: 20px;
 						}
     				}

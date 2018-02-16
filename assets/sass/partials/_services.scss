@@ -12,6 +12,7 @@
 		font-size: 10px;
 		line-height: 15px;
 		color: $gray-font;
+	    margin-top: 3px;
 	}
 
 	.info-block,
@@ -32,31 +33,53 @@
 
 		h4 {
 			text-transform: uppercase;
+			letter-spacing: 0.8px;
 		}
 
 		.info {
-			padding: 10px 25px;
+			padding: 12px 2% 0 15%;
+			position: relative;
 			p, h4 {
 				margin: 0;
 			}
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 16px;
+			}
+
+			&:before {
+				left: 0;
+				@include arrow-right(6px, $light-gray);
+			}
+
+			&:after {
+				right: -6px;
+				@include arrow-right(6px, $gray);
+			}
+
 		}
 
 		.icon-info {
-			width: 20px;
-			height: 20px;
-			background: url('../svg/icons.svg') no-repeat;
+			width: 24px;
+			height: 24px;
+			background: $gray url('../svg/icons.svg') no-repeat;
 		    display: inline-block;
-		    background-position: 0 -20px;
+		    background-position: 2px -19px;
 		    position: absolute;
-		    top: 0;
-		    left: -30px;
+		    top: 10px;
+		    left: -31px;
+		    border-radius: 50%;
+		    @include box-shadow(inset 1px 2px 6px 0px rgba(0, 0, 0, 0.5));
 		}
 	}
 
 	.service {
 		width: 9%;
 		text-align: center;
-		padding: 20px 11px 0;
+		padding: 20px 1% 0;
 		border-right: 2px solid $white;
 
 		&:last-child {

@@ -33,64 +33,86 @@ p {
   margin: 0 auto; }
 
 /* line 30, ../sass/partials/_header.scss */
+.nav-block {
+  height: 85px;
+  position: relative; }
+
+/* line 35, ../sass/partials/_header.scss */
 #logo {
   width: 18%;
   float: left;
   background-color: #2e2e31;
   text-align: center;
-  padding: 14px 0 14px 2%; }
+  padding: 0 0 0 2%;
+  height: 100%; }
+  /* line 43, ../sass/partials/_header.scss */
+  #logo img {
+    margin-top: 14px; }
 
-/* line 38, ../sass/partials/_header.scss */
+/* line 48, ../sass/partials/_header.scss */
 #menu {
   width: 78%;
   float: left;
   background-color: #37373a;
-  padding-right: 2%; }
-  /* line 44, ../sass/partials/_header.scss */
+  padding-right: 2%;
+  height: 100%; }
+  /* line 55, ../sass/partials/_header.scss */
   #menu ul li {
     list-style: none;
     display: inline-block; }
-    /* line 48, ../sass/partials/_header.scss */
+    /* line 59, ../sass/partials/_header.scss */
     #menu ul li a {
       color: #ffffff;
       text-decoration: none;
       text-transform: uppercase; }
-  /* line 55, ../sass/partials/_header.scss */
+  /* line 66, ../sass/partials/_header.scss */
   #menu .navigation {
     width: 80%;
-    float: left;
-    padding: 15px 0; }
-    /* line 61, ../sass/partials/_header.scss */
+    float: left; }
+    /* line 71, ../sass/partials/_header.scss */
+    #menu .navigation nav ul {
+      margin: 0; }
+    /* line 74, ../sass/partials/_header.scss */
     #menu .navigation nav a {
       font-size: 12px;
       line-height: 12px;
-      padding: 0 16px;
-      letter-spacing: 1px; }
-  /* line 70, ../sass/partials/_header.scss */
+      padding: 36px 16px;
+      letter-spacing: 1px;
+      display: inline-block; }
+      /* line 81, ../sass/partials/_header.scss */
+      #menu .navigation nav a:hover, #menu .navigation nav a:focus {
+        background-color: #72c5c4; }
+    /* line 87, ../sass/partials/_header.scss */
+    #menu .navigation nav .submenu {
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 10000; }
+  /* line 96, ../sass/partials/_header.scss */
   #menu .account-language {
     width: 20%;
     float: left; }
-    /* line 74, ../sass/partials/_header.scss */
+    /* line 100, ../sass/partials/_header.scss */
     #menu .account-language .lang {
       text-align: right; }
-      /* line 77, ../sass/partials/_header.scss */
+      /* line 103, ../sass/partials/_header.scss */
       #menu .account-language .lang ul {
         margin: 0;
         padding: 0; }
-      /* line 84, ../sass/partials/_header.scss */
+      /* line 110, ../sass/partials/_header.scss */
       #menu .account-language .lang li a {
         font-size: 10px;
         line-height: 10px;
         padding: 0 5px 0 0; }
-      /* line 91, ../sass/partials/_header.scss */
+      /* line 117, ../sass/partials/_header.scss */
       #menu .account-language .lang li.active a {
         text-decoration: underline; }
-      /* line 96, ../sass/partials/_header.scss */
+      /* line 122, ../sass/partials/_header.scss */
       #menu .account-language .lang li .slash {
         font-size: 10px;
         line-height: 10px;
         color: #ffffff; }
-      /* line 102, ../sass/partials/_header.scss */
+      /* line 128, ../sass/partials/_header.scss */
       #menu .account-language .lang li .icon {
         width: 20px;
         height: 20px;
@@ -102,20 +124,20 @@ p {
         right: 0;
         bottom: 0;
         margin: auto; }
-        /* line 114, ../sass/partials/_header.scss */
+        /* line 140, ../sass/partials/_header.scss */
         #menu .account-language .lang li .icon.cart {
           background-position: 0 0; }
-        /* line 118, ../sass/partials/_header.scss */
+        /* line 144, ../sass/partials/_header.scss */
         #menu .account-language .lang li .icon.connect {
           background-position: -20px 0; }
-      /* line 125, ../sass/partials/_header.scss */
+      /* line 151, ../sass/partials/_header.scss */
       #menu .account-language .lang li.cart a, #menu .account-language .lang li.connect a {
         width: 40px;
         height: 36px;
         display: block;
         position: relative;
         padding: 0; }
-        /* line 132, ../sass/partials/_header.scss */
+        /* line 158, ../sass/partials/_header.scss */
         #menu .account-language .lang li.cart a:before, #menu .account-language .lang li.connect a:before {
           content: '';
           width: 0;
@@ -128,16 +150,16 @@ p {
           left: 0;
           right: 0;
           margin: auto; }
-      /* line 144, ../sass/partials/_header.scss */
+      /* line 170, ../sass/partials/_header.scss */
       #menu .account-language .lang li.cart {
         margin-right: -5px; }
-        /* line 146, ../sass/partials/_header.scss */
+        /* line 172, ../sass/partials/_header.scss */
         #menu .account-language .lang li.cart a {
           background-color: #4e4d4d; }
-      /* line 152, ../sass/partials/_header.scss */
+      /* line 178, ../sass/partials/_header.scss */
       #menu .account-language .lang li.connect a {
         background-color: #cacaca; }
-      /* line 157, ../sass/partials/_header.scss */
+      /* line 183, ../sass/partials/_header.scss */
       #menu .account-language .lang li.en, #menu .account-language .lang li.fr {
         position: relative;
         top: -14px; }
@@ -146,34 +168,46 @@ p {
 /*	Slider Section					  */
 /*------------------------------------*/
 /* line 5, ../sass/partials/_slider.scss */
+.bx-wrapper {
+  box-shadow: none;
+  border: none; }
+
+/* line 10, ../sass/partials/_slider.scss */
 .slides {
   margin: 1px 0 0; }
-  /* line 8, ../sass/partials/_slider.scss */
+  /* line 13, ../sass/partials/_slider.scss */
   .slides .slide {
     padding: 0 2%;
     position: relative; }
-    /* line 11, ../sass/partials/_slider.scss */
-    .slides .slide img {
-      width: 100%;
-      height: auto; }
     /* line 16, ../sass/partials/_slider.scss */
+    .slides .slide img {
+      max-width: 100%;
+      height: auto; }
+    /* line 21, ../sass/partials/_slider.scss */
     .slides .slide .caption {
       position: absolute;
       top: 20%;
-      left: 0;
+      left: 1%;
       width: 410px;
-      -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.5);
-      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.5);
-      background-color: #ffffff; }
-      /* line 24, ../sass/partials/_slider.scss */
+      -webkit-box-shadow: -4px 0px 8px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: -4px 0px 8px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: -4px 0px 8px 0px rgba(0, 0, 0, 0.2);
+      height: 115px;
+      width: 430px; }
+      /* line 30, ../sass/partials/_slider.scss */
+      .slides .slide .caption.right {
+        left: initial;
+        right: 4%;
+        top: 10%; }
+      /* line 36, ../sass/partials/_slider.scss */
       .slides .slide .caption .left {
-        width: 265px;
+        height: 100%;
+        width: 54%;
         float: left;
         background-color: #ffffff;
-        padding: 0 5px 0 35px;
+        padding: 0 1% 0 8%;
         position: relative; }
-        /* line 31, ../sass/partials/_slider.scss */
+        /* line 44, ../sass/partials/_slider.scss */
         .slides .slide .caption .left:after {
           content: '';
           width: 0;
@@ -184,7 +218,7 @@ p {
           position: absolute;
           right: -10px;
           top: 25px; }
-        /* line 39, ../sass/partials/_slider.scss */
+        /* line 52, ../sass/partials/_slider.scss */
         .slides .slide .caption .left h2 {
           font-size: 25px;
           line-height: 25px;
@@ -193,33 +227,34 @@ p {
           letter-spacing: 1.5px;
           font-weight: 400;
           margin-bottom: 10px; }
-        /* line 49, ../sass/partials/_slider.scss */
+        /* line 62, ../sass/partials/_slider.scss */
         .slides .slide .caption .left p {
           font-family: Arial, sans-serif;
           font-size: 11px;
           line-height: 11px;
           color: #9a9a9a; }
-      /* line 57, ../sass/partials/_slider.scss */
+      /* line 70, ../sass/partials/_slider.scss */
       .slides .slide .caption .right {
-        width: 65px;
+        height: 100%;
+        min-width: 15%;
         float: left;
         background-color: #72c5c4;
-        padding: 0 15px 0 25px;
-        color: #ffffff; }
-        /* line 64, ../sass/partials/_slider.scss */
+        padding: 0 2% 0 5%;
+        color: #ffffff;
+        text-align: center; }
+        /* line 79, ../sass/partials/_slider.scss */
         .slides .slide .caption .right p {
           font-size: 11px;
           margin: 27px 0 0 0; }
-          /* line 68, ../sass/partials/_slider.scss */
+          /* line 83, ../sass/partials/_slider.scss */
           .slides .slide .caption .right p.price {
             font-size: 40px;
-            position: relative;
             margin: 0 0 15px 0; }
-            /* line 73, ../sass/partials/_slider.scss */
+            /* line 87, ../sass/partials/_slider.scss */
             .slides .slide .caption .right p.price .currency {
-              position: absolute;
-              top: 0;
-              right: 0;
+              position: relative;
+              top: -20px;
+              left: -10px;
               font-size: 20px; }
 
 /*------------------------------------*/
@@ -234,73 +269,122 @@ p {
   .services p, .services h4 {
     font-size: 10px;
     line-height: 15px;
-    color: #9a9a9a; }
-  /* line 17, ../sass/partials/_services.scss */
+    color: #9a9a9a;
+    margin-top: 3px; }
+  /* line 18, ../sass/partials/_services.scss */
   .services .info-block,
   .services .service {
     float: left;
     height: 100%; }
-  /* line 23, ../sass/partials/_services.scss */
+  /* line 24, ../sass/partials/_services.scss */
   .services .info-block {
     width: 17%;
     margin-left: 40px;
     background-color: #6f6f6f;
     position: relative; }
-    /* line 29, ../sass/partials/_services.scss */
+    /* line 30, ../sass/partials/_services.scss */
     .services .info-block p, .services .info-block h4 {
       color: #ffffff; }
-    /* line 33, ../sass/partials/_services.scss */
+    /* line 34, ../sass/partials/_services.scss */
     .services .info-block h4 {
-      text-transform: uppercase; }
-    /* line 37, ../sass/partials/_services.scss */
+      text-transform: uppercase;
+      letter-spacing: 0.8px; }
+    /* line 39, ../sass/partials/_services.scss */
     .services .info-block .info {
-      padding: 10px 25px; }
-      /* line 39, ../sass/partials/_services.scss */
+      padding: 12px 2% 0 15%;
+      position: relative; }
+      /* line 42, ../sass/partials/_services.scss */
       .services .info-block .info p, .services .info-block .info h4 {
         margin: 0; }
-    /* line 44, ../sass/partials/_services.scss */
+      /* line 46, ../sass/partials/_services.scss */
+      .services .info-block .info:before, .services .info-block .info:after {
+        content: '';
+        position: absolute;
+        top: 16px; }
+      /* line 53, ../sass/partials/_services.scss */
+      .services .info-block .info:before {
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 6px solid #f5f3f3; }
+      /* line 58, ../sass/partials/_services.scss */
+      .services .info-block .info:after {
+        right: -6px;
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 6px solid #6f6f6f; }
+    /* line 65, ../sass/partials/_services.scss */
     .services .info-block .icon-info {
-      width: 20px;
-      height: 20px;
-      background: url("../svg/icons.svg") no-repeat;
+      width: 24px;
+      height: 24px;
+      background: #6f6f6f url("../svg/icons.svg") no-repeat;
       display: inline-block;
-      background-position: 0 -20px;
+      background-position: 2px -19px;
       position: absolute;
-      top: 0;
-      left: -30px; }
-  /* line 56, ../sass/partials/_services.scss */
+      top: 10px;
+      left: -31px;
+      border-radius: 50%;
+      -webkit-box-shadow: inset 1px 2px 6px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: inset 1px 2px 6px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 1px 2px 6px 0px rgba(0, 0, 0, 0.5); }
+  /* line 79, ../sass/partials/_services.scss */
   .services .service {
     width: 9%;
     text-align: center;
-    padding: 20px 11px 0;
+    padding: 20px 1% 0;
     border-right: 2px solid #ffffff; }
-    /* line 62, ../sass/partials/_services.scss */
+    /* line 85, ../sass/partials/_services.scss */
     .services .service:last-child {
       border-right: 0; }
-    /* line 66, ../sass/partials/_services.scss */
+    /* line 89, ../sass/partials/_services.scss */
     .services .service .icon {
       width: 60px;
       height: 45px;
       background: url("../svg/reassu.svg") no-repeat;
       display: inline-block; }
-      /* line 72, ../sass/partials/_services.scss */
+      /* line 95, ../sass/partials/_services.scss */
       .services .service .icon.satisfait-rembourse {
         background-position: 0 0; }
-      /* line 76, ../sass/partials/_services.scss */
+      /* line 99, ../sass/partials/_services.scss */
       .services .service .icon.paiement {
         background-position: -60px 0; }
-      /* line 80, ../sass/partials/_services.scss */
+      /* line 103, ../sass/partials/_services.scss */
       .services .service .icon.expedition {
         background-position: -120px 0; }
-      /* line 84, ../sass/partials/_services.scss */
+      /* line 107, ../sass/partials/_services.scss */
       .services .service .icon.livraison {
         background-position: 0 -45px; }
-      /* line 88, ../sass/partials/_services.scss */
+      /* line 111, ../sass/partials/_services.scss */
       .services .service .icon.garantie {
         background-position: -60px -45px; }
-      /* line 92, ../sass/partials/_services.scss */
+      /* line 115, ../sass/partials/_services.scss */
       .services .service .icon.stock {
         background-position: -120px -45px; }
-      /* line 96, ../sass/partials/_services.scss */
+      /* line 119, ../sass/partials/_services.scss */
       .services .service .icon.retours {
         background-position: 0 -90px; }
+
+/*------------------------------------*/
+/*	Footer Section				      */
+/*------------------------------------*/
+/* line 5, ../sass/partials/_footer.scss */
+footer {
+  margin: 45px 0; }
+  /* line 7, ../sass/partials/_footer.scss */
+  footer p {
+    text-align: center;
+    font-size: 9px;
+    line-height: 9px;
+    font-weight: 700;
+    color: #9a9a9a; }
+  /* line 15, ../sass/partials/_footer.scss */
+  footer span.logo {
+    width: 77px;
+    height: 19px;
+    display: inline-block;
+    position: relative;
+    top: 8px; }
