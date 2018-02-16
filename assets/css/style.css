@@ -88,58 +88,84 @@ p {
       left: 0;
       right: 0;
       z-index: 10000;
-      background: rgba(114, 197, 196, 0.5);
-      padding: 0; }
-      /* line 95, ../sass/partials/_header.scss */
+      background: #f5f3f3;
+      padding: 0;
+      -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3); }
+      /* line 96, ../sass/partials/_header.scss */
+      #menu .navigation nav .submenu b {
+        font-size: 10px;
+        line-height: 10px;
+        text-transform: uppercase;
+        font-weight: 700; }
+      /* line 103, ../sass/partials/_header.scss */
       #menu .navigation nav .submenu li {
         display: block;
         float: left; }
-        /* line 98, ../sass/partials/_header.scss */
-        #menu .navigation nav .submenu li a {
-          padding: 0; }
-        /* line 102, ../sass/partials/_header.scss */
-        #menu .navigation nav .submenu li.v-img {
-          width: 15%; }
         /* line 106, ../sass/partials/_header.scss */
+        #menu .navigation nav .submenu li a {
+          padding: 0;
+          text-transform: uppercase;
+          font-size: 11px;
+          line-height: 11px;
+          color: #9a9a9a; }
+        /* line 114, ../sass/partials/_header.scss */
+        #menu .navigation nav .submenu li.v-img {
+          width: 15%;
+          -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+          padding: 30px 1.5%; }
+        /* line 120, ../sass/partials/_header.scss */
         #menu .navigation nav .submenu li.links {
-          width: 55%; }
-          /* line 109, ../sass/partials/_header.scss */
+          width: 50%; }
+          /* line 123, ../sass/partials/_header.scss */
           #menu .navigation nav .submenu li.links .left,
           #menu .navigation nav .submenu li.links .right {
             float: left;
             width: 50%; }
-            /* line 114, ../sass/partials/_header.scss */
+            /* line 128, ../sass/partials/_header.scss */
             #menu .navigation nav .submenu li.links .left ul li,
             #menu .navigation nav .submenu li.links .right ul li {
               float: none; }
-        /* line 120, ../sass/partials/_header.scss */
+        /* line 134, ../sass/partials/_header.scss */
         #menu .navigation nav .submenu li.h-img {
-          width: 30%; }
-  /* line 130, ../sass/partials/_header.scss */
+          width: 29%;
+          -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+          padding: 10px 1.5%; }
+          /* line 139, ../sass/partials/_header.scss */
+          #menu .navigation nav .submenu li.h-img img {
+            width: 100%;
+            height: 135px;
+            margin: 5px 0; }
+  /* line 152, ../sass/partials/_header.scss */
   #menu .account-language {
     width: 20%;
     float: left; }
-    /* line 134, ../sass/partials/_header.scss */
+    /* line 156, ../sass/partials/_header.scss */
     #menu .account-language .lang {
       text-align: right; }
-      /* line 137, ../sass/partials/_header.scss */
+      /* line 159, ../sass/partials/_header.scss */
       #menu .account-language .lang ul {
         margin: 0;
         padding: 0; }
-      /* line 144, ../sass/partials/_header.scss */
+      /* line 166, ../sass/partials/_header.scss */
       #menu .account-language .lang li a {
         font-size: 10px;
         line-height: 10px;
         padding: 0 5px 0 0; }
-      /* line 151, ../sass/partials/_header.scss */
+      /* line 173, ../sass/partials/_header.scss */
       #menu .account-language .lang li.active a {
         text-decoration: underline; }
-      /* line 156, ../sass/partials/_header.scss */
+      /* line 178, ../sass/partials/_header.scss */
       #menu .account-language .lang li .slash {
         font-size: 10px;
         line-height: 10px;
         color: #ffffff; }
-      /* line 162, ../sass/partials/_header.scss */
+      /* line 184, ../sass/partials/_header.scss */
       #menu .account-language .lang li .icon {
         width: 20px;
         height: 20px;
@@ -151,20 +177,20 @@ p {
         right: 0;
         bottom: 0;
         margin: auto; }
-        /* line 174, ../sass/partials/_header.scss */
+        /* line 196, ../sass/partials/_header.scss */
         #menu .account-language .lang li .icon.cart {
           background-position: 0 0; }
-        /* line 178, ../sass/partials/_header.scss */
+        /* line 200, ../sass/partials/_header.scss */
         #menu .account-language .lang li .icon.connect {
           background-position: -20px 0; }
-      /* line 185, ../sass/partials/_header.scss */
+      /* line 207, ../sass/partials/_header.scss */
       #menu .account-language .lang li.cart a, #menu .account-language .lang li.connect a {
         width: 40px;
         height: 36px;
         display: block;
         position: relative;
         padding: 0; }
-        /* line 192, ../sass/partials/_header.scss */
+        /* line 214, ../sass/partials/_header.scss */
         #menu .account-language .lang li.cart a:before, #menu .account-language .lang li.connect a:before {
           content: '';
           width: 0;
@@ -177,16 +203,16 @@ p {
           left: 0;
           right: 0;
           margin: auto; }
-      /* line 204, ../sass/partials/_header.scss */
+      /* line 226, ../sass/partials/_header.scss */
       #menu .account-language .lang li.cart {
         margin-right: -5px; }
-        /* line 206, ../sass/partials/_header.scss */
+        /* line 228, ../sass/partials/_header.scss */
         #menu .account-language .lang li.cart a {
           background-color: #4e4d4d; }
-      /* line 212, ../sass/partials/_header.scss */
+      /* line 234, ../sass/partials/_header.scss */
       #menu .account-language .lang li.connect a {
         background-color: #cacaca; }
-      /* line 217, ../sass/partials/_header.scss */
+      /* line 239, ../sass/partials/_header.scss */
       #menu .account-language .lang li.en, #menu .account-language .lang li.fr {
         position: relative;
         top: -14px; }
