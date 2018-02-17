@@ -4,7 +4,9 @@ $(document).ready(function(){
 	$('.slides').bxSlider({
 		mode: 'fade',
 	    slideWidth: 1035,
-	    auto: true
+	    auto: true,
+	    controls: false,
+	    pager: false
 	});
 
 });
