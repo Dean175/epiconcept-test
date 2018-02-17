@@ -25,3 +25,21 @@
 	-moz-box-shadow: $value;
 	box-shadow: $value;
 }
+
+// TRANSITION
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+// TRANSFORM
+@mixin transform($args...) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}

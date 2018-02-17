@@ -3,7 +3,8 @@ $(document).ready(function(){
 
 	$('.slides').bxSlider({
 		mode: 'fade',
-	    slideWidth: 1035
+	    slideWidth: 1035,
+	    auto: true
 	});
 
 });
