@@ -126,7 +126,7 @@ p {
 				opacity: 0;
 				@include box-shadow(0 1px 10px 2px rgba(0,0,0,0.3));
 				@include transform(translateY(-100%));
-				@include transition(transform 0.5s ease, opacity 1s ease);
+				@include transition(transform .3s ease, opacity .2s ease);
 				
 				b {
 					font-size: 10px;
@@ -269,6 +269,7 @@ p {
 
 		.lang {
 			text-align: right;
+			position: relative;
 
 			ul {
 				margin: 0;
@@ -356,6 +357,85 @@ p {
 					top: -14px;
 				}
 
+			}
+		}
+	}
+
+
+	.account-language {
+
+		.login-form-box {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 300px;
+			background-color: $cart-gray;
+			padding-left: 20px;
+			text-align: left;
+			opacity: 0;
+			display: none;
+
+			&.show {
+				opacity: 1;
+				display: block;
+			}
+		}
+
+		.login-form,
+		.connect-box {
+			float: left;
+		}
+
+		.login-form {
+			width: 260px;
+		}
+
+		.connect-box {
+			width: 40px;
+			position: relative;
+
+			a {
+				display: block;
+				width: 40px;
+				height: 36px;
+			}
+
+			.icon {
+				width: 20px;
+				height: 20px;
+				background: url('../svg/icons.svg') no-repeat;
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+
+				&.connect {
+					background-position: -20px 0;
+				}
+			}
+
+
+			&.connect {
+				a {
+					width: 40px;
+					height: 36px;
+					display: block;
+					position: relative;
+					padding: 0;
+
+					&:before {
+						content: '';
+						@include arrow-down(4px, $lighter-black);
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+					}
+				}
 			}
 		}
 	}
