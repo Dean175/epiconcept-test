@@ -3,6 +3,28 @@
   src: url("../fonts/futurastd-book.woff") format("woff"), url("../fonts/futurastd-book.woff2") format("woff2");
   font-weight: 400;
   font-style: normal; }
+/* line 1, ../sass/partials/_form.scss */
+input {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  line-height: 1.1;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  margin-bottom: 2px; }
+
+/* line 11, ../sass/partials/_form.scss */
+input#pwd {
+  width: 84%; }
+
+/* line 15, ../sass/partials/_form.scss */
+button {
+  border: none;
+  background-color: #2e2e31;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 8px; }
+
 /*------------------------------------*/
 /*	Header Section					  */
 /*------------------------------------*/
@@ -134,10 +156,10 @@ p {
       -ms-transform: translateY(-100%);
       -o-transform: translateY(-100%);
       transform: translateY(-100%);
-      -webkit-transition: transform 0.5s ease, opacity 1s ease;
-      -moz-transition: transform 0.5s ease, opacity 1s ease;
-      -o-transition: transform 0.5s ease, opacity 1s ease;
-      transition: transform 0.5s ease, opacity 1s ease; }
+      -webkit-transition: transform 0.3s ease, opacity 0.2s ease;
+      -moz-transition: transform 0.3s ease, opacity 0.2s ease;
+      -o-transition: transform 0.3s ease, opacity 0.2s ease;
+      transition: transform 0.3s ease, opacity 0.2s ease; }
       /* line 131, ../sass/partials/_header.scss */
       #menu .navigation nav .submenu b {
         font-size: 10px;
@@ -259,25 +281,26 @@ p {
     float: left; }
     /* line 270, ../sass/partials/_header.scss */
     #menu .account-language .lang {
-      text-align: right; }
-      /* line 273, ../sass/partials/_header.scss */
+      text-align: right;
+      position: relative; }
+      /* line 274, ../sass/partials/_header.scss */
       #menu .account-language .lang ul {
         margin: 0;
         padding: 0; }
-      /* line 280, ../sass/partials/_header.scss */
+      /* line 281, ../sass/partials/_header.scss */
       #menu .account-language .lang li a {
         font-size: 10px;
         line-height: 10px;
         padding: 0 5px 0 0; }
-      /* line 287, ../sass/partials/_header.scss */
+      /* line 288, ../sass/partials/_header.scss */
       #menu .account-language .lang li.active a {
         text-decoration: underline; }
-      /* line 292, ../sass/partials/_header.scss */
+      /* line 293, ../sass/partials/_header.scss */
       #menu .account-language .lang li .slash {
         font-size: 10px;
         line-height: 10px;
         color: #ffffff; }
-      /* line 298, ../sass/partials/_header.scss */
+      /* line 299, ../sass/partials/_header.scss */
       #menu .account-language .lang li .icon {
         width: 20px;
         height: 20px;
@@ -289,20 +312,20 @@ p {
         right: 0;
         bottom: 0;
         margin: auto; }
-        /* line 310, ../sass/partials/_header.scss */
+        /* line 311, ../sass/partials/_header.scss */
         #menu .account-language .lang li .icon.cart {
           background-position: 0 0; }
-        /* line 314, ../sass/partials/_header.scss */
+        /* line 315, ../sass/partials/_header.scss */
         #menu .account-language .lang li .icon.connect {
           background-position: -20px 0; }
-      /* line 321, ../sass/partials/_header.scss */
+      /* line 322, ../sass/partials/_header.scss */
       #menu .account-language .lang li.cart a, #menu .account-language .lang li.connect a {
         width: 40px;
         height: 36px;
         display: block;
         position: relative;
         padding: 0; }
-        /* line 328, ../sass/partials/_header.scss */
+        /* line 329, ../sass/partials/_header.scss */
         #menu .account-language .lang li.cart a:before, #menu .account-language .lang li.connect a:before {
           content: '';
           width: 0;
@@ -315,19 +338,85 @@ p {
           left: 0;
           right: 0;
           margin: auto; }
-      /* line 340, ../sass/partials/_header.scss */
+      /* line 341, ../sass/partials/_header.scss */
       #menu .account-language .lang li.cart {
         margin-right: -5px; }
-        /* line 342, ../sass/partials/_header.scss */
+        /* line 343, ../sass/partials/_header.scss */
         #menu .account-language .lang li.cart a {
           background-color: #4e4d4d; }
-      /* line 348, ../sass/partials/_header.scss */
+      /* line 349, ../sass/partials/_header.scss */
       #menu .account-language .lang li.connect a {
         background-color: #cacaca; }
-      /* line 353, ../sass/partials/_header.scss */
+      /* line 354, ../sass/partials/_header.scss */
       #menu .account-language .lang li.en, #menu .account-language .lang li.fr {
         position: relative;
         top: -14px; }
+  /* line 367, ../sass/partials/_header.scss */
+  #menu .account-language .login-form-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: #4e4d4d;
+    padding-left: 20px;
+    text-align: left;
+    opacity: 0;
+    display: none; }
+    /* line 378, ../sass/partials/_header.scss */
+    #menu .account-language .login-form-box.show {
+      opacity: 1;
+      display: block; }
+  /* line 384, ../sass/partials/_header.scss */
+  #menu .account-language .login-form,
+  #menu .account-language .connect-box {
+    float: left; }
+  /* line 389, ../sass/partials/_header.scss */
+  #menu .account-language .login-form {
+    width: 260px; }
+  /* line 393, ../sass/partials/_header.scss */
+  #menu .account-language .connect-box {
+    width: 40px;
+    position: relative; }
+    /* line 397, ../sass/partials/_header.scss */
+    #menu .account-language .connect-box a {
+      display: block;
+      width: 40px;
+      height: 36px; }
+    /* line 403, ../sass/partials/_header.scss */
+    #menu .account-language .connect-box .icon {
+      width: 20px;
+      height: 20px;
+      background: url("../svg/icons.svg") no-repeat;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto; }
+      /* line 415, ../sass/partials/_header.scss */
+      #menu .account-language .connect-box .icon.connect {
+        background-position: -20px 0; }
+    /* line 422, ../sass/partials/_header.scss */
+    #menu .account-language .connect-box.connect a {
+      width: 40px;
+      height: 36px;
+      display: block;
+      position: relative;
+      padding: 0; }
+      /* line 429, ../sass/partials/_header.scss */
+      #menu .account-language .connect-box.connect a:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #37373a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto; }
 
 /*------------------------------------*/
 /*	Slider Section					  */
