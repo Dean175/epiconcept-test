@@ -15,7 +15,7 @@ const $loginFrmBox = document.querySelector(".login-form-box");
 const $loginFrm = document.querySelector(".login-form");
 
 const $email = document.querySelector("#email");
-console.log($email.value);
+const $pwd = document.querySelector("#pwd");
 
 
 
@@ -34,16 +34,20 @@ document.addEventListener("click", function(event) {
 });
 
 $loginFrm.addEventListener("submit", function(e){
+	e.preventDefault();
 	
-	const emailRegex = /\w+@\w+\.\w{2,}/;
+	const emailRegex = /\w+@\w+\.\w{2,}/g;
+	const pwdRegex = /(?=.*\w)(?=.*\d)(?=.*[@$!%*#?&])[\w@$!%*#?&]{8}/g;
 
 	let email = $email.value;
+	let pwd = $pwd.value;
 
-	if(emailRegex.test(email)) {
-		console.log("valid mail");
+	if(pwdRegex.test(pwd)) {
+		console.log("valid password");
 		
 	} else {
-		e.preventDefault();
+		// e.preventDefault();
+		console.log("NOT valid password");
 	}
 	
 });
