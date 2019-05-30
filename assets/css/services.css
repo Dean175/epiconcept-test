@@ -1,0 +1,87 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.services {
+  font-size: 10px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.service, .info {
+  float: left;
+  background-color: #efeeee;
+  height: 140px;
+}
+
+.service {
+  width: 11%;
+  text-align: center;
+  margin-left: 1px;
+  padding: 1em 1em;
+}
+
+.info {
+  width: 20%;
+  position: relative;
+  color: #fff;
+}
+
+.service-info {
+  padding: 1em 2em;
+  margin-left: 3.5em;
+  background-color: #6f6f6f;
+  height: 100%;
+  position: relative;
+}
+
+.service-info:before {
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: 5px;
+  border-color: transparent transparent transparent #efeeee;
+  left: 0;
+  top: 23px;
+}
+
+.service-info:after {
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: 5px;
+  border-color: transparent transparent transparent #6f6f6f;
+  right: -10px;
+  top: 23px;
+}
+
+.info .icon-info {
+  background-image: url('../img/info.png');
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin: 5px 5px 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* .info .icon-info,
+.info .service-info {
+  float: left;
+} */
+
+.service .icon {
+  background-image: url('../svg/reassu.svg');
+  background-color: crimson;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-position: -10px -3px;
+}

@@ -1,0 +1,9 @@
+.service {
+    &.icon {
+        background-image: url('../assets/svg/reassu.svg');
+        background-color: crimson;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+    }
+}

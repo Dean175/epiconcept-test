@@ -2,126 +2,126 @@
 /*	Services Section				  */
 /*------------------------------------*/
 
-.services {
+// .services {
 
-	margin-top: 70px;
-	background-color: $light-gray;
-	height: 134px;
+// 	margin-top: 70px;
+// 	background-color: $light-gray;
+// 	height: 134px;
 
-	p, h4 {
-		font-size: 10px;
-		line-height: 15px;
-		color: $gray-font;
-	    margin-top: 3px;
-	}
+// 	p, h4 {
+// 		font-size: 10px;
+// 		line-height: 15px;
+// 		color: $gray-font;
+// 	    margin-top: 3px;
+// 	}
 
-	.info-block,
-	.service {
-		float: left;
-		height: 100%;
-	}
+// 	.info-block,
+// 	.service {
+// 		float: left;
+// 		height: 100%;
+// 	}
 
-	.info-block {
-		width: 17%;
-		margin-left: 40px;
-		background-color: $gray;
-		position: relative;
+// 	.info-block {
+// 		width: 17%;
+// 		margin-left: 40px;
+// 		background-color: $gray;
+// 		position: relative;
 
-		p, h4 {
-			color: $white;
-		}
+// 		p, h4 {
+// 			color: $white;
+// 		}
 
-		h4 {
-			text-transform: uppercase;
-			letter-spacing: 0.8px;
-		}
+// 		h4 {
+// 			text-transform: uppercase;
+// 			letter-spacing: 0.8px;
+// 		}
 
-		.info {
-			padding: 12px 2% 0 15%;
-			position: relative;
-			p, h4 {
-				margin: 0;
-			}
+// 		.info {
+// 			padding: 12px 2% 0 15%;
+// 			position: relative;
+// 			p, h4 {
+// 				margin: 0;
+// 			}
 
-			&:before,
-			&:after {
-				content: '';
-				position: absolute;
-				top: 16px;
-			}
+// 			&:before,
+// 			&:after {
+// 				content: '';
+// 				position: absolute;
+// 				top: 16px;
+// 			}
 
-			&:before {
-				left: 0;
-				@include arrow-right(6px, $light-gray);
-			}
+// 			&:before {
+// 				left: 0;
+// 				@include arrow-right(6px, $light-gray);
+// 			}
 
-			&:after {
-				right: -6px;
-				@include arrow-right(6px, $gray);
-			}
+// 			&:after {
+// 				right: -6px;
+// 				@include arrow-right(6px, $gray);
+// 			}
 
-		}
+// 		}
 
-		.icon-info {
-			width: 24px;
-			height: 24px;
-			background: $gray url('../svg/icons.svg') no-repeat;
-		    display: inline-block;
-		    background-position: 2px -19px;
-		    position: absolute;
-		    top: 10px;
-		    left: -31px;
-		    border-radius: 50%;
-		    @include box-shadow(inset 1px 2px 6px 0px rgba(0, 0, 0, 0.5));
-		}
-	}
+// 		.icon-info {
+// 			width: 24px;
+// 			height: 24px;
+// 			background: $gray url('../svg/icons.svg') no-repeat;
+// 		    display: inline-block;
+// 		    background-position: 2px -19px;
+// 		    position: absolute;
+// 		    top: 10px;
+// 		    left: -31px;
+// 		    border-radius: 50%;
+// 		    @include box-shadow(inset 1px 2px 6px 0px rgba(0, 0, 0, 0.5));
+// 		}
+// 	}
 
-	.service {
-		width: 9%;
-		text-align: center;
-		padding: 20px 1% 0;
-		border-right: 2px solid $white;
+// 	.service {
+// 		width: 9%;
+// 		text-align: center;
+// 		padding: 20px 1% 0;
+// 		border-right: 2px solid $white;
 
-		&:last-child {
-			border-right: 0;
-		}
+// 		&:last-child {
+// 			border-right: 0;
+// 		}
 
-		.icon {
-			width: 60px;
-			height: 45px;
-			background: url('../svg/reassu.svg') no-repeat;
-		    display: inline-block;
+// 		.icon {
+// 			width: 60px;
+// 			height: 45px;
+// 			background: url('../svg/reassu.svg') no-repeat;
+// 		    display: inline-block;
 
-		    &.satisfait-rembourse {
-		    	background-position: 0 0;
-		    }
+// 		    &.satisfait-rembourse {
+// 		    	background-position: 0 0;
+// 		    }
 
-			&.paiement {
-		    	background-position: -60px 0;
-		    }
+// 			&.paiement {
+// 		    	background-position: -60px 0;
+// 		    }
 
-		    &.expedition {
-		    	background-position: -120px 0;
-		    }
+// 		    &.expedition {
+// 		    	background-position: -120px 0;
+// 		    }
 
-		    &.livraison {
-		    	background-position: 0 -45px;
-		    }
+// 		    &.livraison {
+// 		    	background-position: 0 -45px;
+// 		    }
 
-		    &.garantie {
-		    	background-position: -60px -45px;
-		    }
+// 		    &.garantie {
+// 		    	background-position: -60px -45px;
+// 		    }
 
-		    &.stock {
-		    	background-position: -120px -45px;
-		    }
+// 		    &.stock {
+// 		    	background-position: -120px -45px;
+// 		    }
 
-		    &.retours {
-		    	background-position: 0 -90px;
-		    }
+// 		    &.retours {
+// 		    	background-position: 0 -90px;
+// 		    }
 
-		}
-	}
+// 		}
+// 	}
 
 
-}
+// }
