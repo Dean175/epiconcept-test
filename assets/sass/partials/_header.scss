@@ -48,7 +48,7 @@ p {
 }
 
 #menu {
-	width: 78%;
+	width: 82%;
 	float: left;
 	background-color: $lighter-black;
 	padding-right: 2%;
@@ -381,17 +381,39 @@ p {
 			}
 		}
 
+		.login-form-links {
+			a {
+				color: $white;
+				font-size: 12px;
+
+				&:first-child {
+					text-transform: uppercase;
+					margin-right: 1rem;
+				}
+			}
+		}
+
+		#error-message {
+			color: red;
+			font-size: 10px;
+		}
+
+		#user-email {
+			color: red;
+			font-size: 1rem;
+		}
+
 		.login-form,
-		.connect-box {
+		.close-connect {
 			float: left;
 		}
 
 		.login-form {
-			width: 260px;
+			width: 85%;
 		}
 
-		.connect-box {
-			width: 40px;
+		.close-connect {
+			width: 15%;
 			position: relative;
 
 			a {

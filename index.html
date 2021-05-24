@@ -92,16 +92,18 @@
 							<div class="login-form-box">
 								<div class="form-box clearfix">
 									<form action="" method="GET" class="login-form">
-										<input type="email" name="email" id="email" placeholder="E-mail">
-										<input type="text" name="pwd" id="pwd" placeholder="Password">
+										<input type="text" name="email" id="email" placeholder="E-mail">
+										<input type="password" name="pwd" id="pwd" placeholder="Password">
 										<button type="submit" name="submit">Ok</button>
 									</form>
-									<div class="connect-box"><a href="#"><span class="icon connect"></span></a></div>
+									<div class="close-connect"><a href="#" id="close-connect-btn"><span class="icon connect"></span></a></div>
 								</div>
-								
+								<div id="error-message"></div>
 								<div class="login-form-links">
-									<p><a href="">Je m'inscris!</a></p>
-									<p><a href="">Mot de passe oublié?</a></p>
+									<p>
+										<a href="">Je m'inscris!</a>
+										<a href="">Mot de passe oublié?</a>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -156,110 +158,61 @@
 	</header>
 	
 	<!-- ********* Main content ********* -->
-	<!-- <main>
-		<div class="wrapper">
-			<section class="services clearfix">
-
-				<div class="info-block">
-					<span class="icon-info"></span>
-					<div class="info">
-						<h4>service client</h4>
-						<p>0 825 95 41 89</p>
-						<p>&#40;0,15<span class="currency euro">&#8364;</span>&#47;min&#41;</p>
-						<br />
-						<p>Du Lundi au Vendredi</p>
-						<p>de 8h à 19h30</p>
-						<p>Le samedi de 9h à 17h</p>
-					</div>
-				</div>
-
-				<div class="service satisfait">
-					<span class="icon satisfait-rembourse"></span>
-					<p>Satisfait ou rembouré sous 30 jours</p>
-				</div>
-
-				<div class="service paiement">
-					<span class="icon paiement"></span>
-					<p>Paiement sécurisé</p>
-				</div>
-
-				<div class="service expedition">
-					<span class="icon expedition"></span>
-					<p>Expédition sous 48h</p>
-				</div>
-
-				<div class="service livraison">
-					<span class="icon livraison"></span>
-					<p>Livraison gratuite à partir de 49<span class="currency euro">&#8364;</span></p>
-				</div>
-
-				<div class="service garantie">
-					<span class="icon garantie"></span>
-					<p>Garantie jusqu'à 2 ans</p>
-				</div>
-
-				<div class="service stock">
-					<span class="icon stock"></span>
-					<p>100&#37; des articles en stock</p>
-				</div>
-
-				<div class="service retours">
-					<span class="icon retours"></span>
-					<p>Retours gratuits et prépayés</p>
-				</div>
-
-			</section>
-		</div>
-	</main> -->
-
 	<main>
 		<div class="wrapper">
 			<div class="services clearfix">
-				<div class="info clearfix">
+
+				<div class="info">
 					<span class="icon-info"></span>
 					<div class="service-info">
-						<p>
-							Service Client<br>
+						<p class="bold">
+							<span class="si-title">Service Client</span><br>
 							0 825 95 41 89<br>
 							(0,15€/min)
 						</p>
 						<p>
-							Du Lundi au Vendredi<br>
+							Du Lundi au Vendredi <br>
 							de 8h à 19h30<br>
 							Le samedi de 9h à 17h
 						</p>
 					</div>
 				</div>
+
 				<div class="service">
 					<span class="icon icon-1"></span>
 					<p>Satisfait ou remboursé sous 30 jours</p>
 				</div>
+
 				<div class="service">
 					<span class="icon icon-2"></span>
 					<p>Paiement sécurisé</p>
 				</div>
+
 				<div class="service">
 					<span class="icon icon-3"></span>
 					<p>Expédition sous 48h</p>
 				</div>
+
 				<div class="service">
 					<span class="icon icon-4"></span>
 					<p>Livraison gratuite à partir de 49€</p>
 				</div>
+
 				<div class="service">
 					<span class="icon icon-5"></span>
 					<p>Garantie jusqu’à 2 ans</p>
 				</div>
+
 				<div class="service">
 					<span class="icon icon-6"></span>
 					<p>100% des articles en stock</p>
 				</div>
+
 				<div class="service">
 					<span class="icon icon-7"></span>
 					<p>Retours gratuits et prépayés</p>
 				</div>
 			</div>
-
 		</div>
 	</main>
 
@@ -274,7 +227,7 @@
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.bxslider.min.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="assets/js/script.js"></script>
 
 </body>
 </html>

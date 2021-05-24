@@ -15,7 +15,7 @@ input {
 
 /* line 11, ../sass/partials/_form.scss */
 input#pwd {
-  width: 84%; }
+  width: 82%; }
 
 /* line 15, ../sass/partials/_form.scss */
 button {
@@ -23,7 +23,8 @@ button {
   background-color: #2e2e31;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 8px; }
+  padding: 8px;
+  width: 15%; }
 
 /*------------------------------------*/
 /*	Header Section					  */
@@ -77,7 +78,7 @@ p {
 
 /* line 50, ../sass/partials/_header.scss */
 #menu {
-  width: 78%;
+  width: 82%;
   float: left;
   background-color: #37373a;
   padding-right: 2%;
@@ -366,24 +367,40 @@ p {
     #menu .account-language .login-form-box.show {
       opacity: 1;
       display: block; }
-  /* line 384, ../sass/partials/_header.scss */
+  /* line 385, ../sass/partials/_header.scss */
+  #menu .account-language .login-form-links a {
+    color: #ffffff;
+    font-size: 12px; }
+    /* line 389, ../sass/partials/_header.scss */
+    #menu .account-language .login-form-links a:first-child {
+      text-transform: uppercase;
+      margin-right: 1rem; }
+  /* line 396, ../sass/partials/_header.scss */
+  #menu .account-language #error-message {
+    color: red;
+    font-size: 10px; }
+  /* line 401, ../sass/partials/_header.scss */
+  #menu .account-language #user-email {
+    color: red;
+    font-size: 1rem; }
+  /* line 406, ../sass/partials/_header.scss */
   #menu .account-language .login-form,
-  #menu .account-language .connect-box {
+  #menu .account-language .close-connect {
     float: left; }
-  /* line 389, ../sass/partials/_header.scss */
+  /* line 411, ../sass/partials/_header.scss */
   #menu .account-language .login-form {
-    width: 260px; }
-  /* line 393, ../sass/partials/_header.scss */
-  #menu .account-language .connect-box {
-    width: 40px;
+    width: 85%; }
+  /* line 415, ../sass/partials/_header.scss */
+  #menu .account-language .close-connect {
+    width: 15%;
     position: relative; }
-    /* line 397, ../sass/partials/_header.scss */
-    #menu .account-language .connect-box a {
+    /* line 419, ../sass/partials/_header.scss */
+    #menu .account-language .close-connect a {
       display: block;
       width: 40px;
       height: 36px; }
-    /* line 403, ../sass/partials/_header.scss */
-    #menu .account-language .connect-box .icon {
+    /* line 425, ../sass/partials/_header.scss */
+    #menu .account-language .close-connect .icon {
       width: 20px;
       height: 20px;
       background: url("../svg/icons.svg") no-repeat;
@@ -394,18 +411,18 @@ p {
       right: 0;
       bottom: 0;
       margin: auto; }
-      /* line 415, ../sass/partials/_header.scss */
-      #menu .account-language .connect-box .icon.connect {
+      /* line 437, ../sass/partials/_header.scss */
+      #menu .account-language .close-connect .icon.connect {
         background-position: -20px 0; }
-    /* line 422, ../sass/partials/_header.scss */
-    #menu .account-language .connect-box.connect a {
+    /* line 444, ../sass/partials/_header.scss */
+    #menu .account-language .close-connect.connect a {
       width: 40px;
       height: 36px;
       display: block;
       position: relative;
       padding: 0; }
-      /* line 429, ../sass/partials/_header.scss */
-      #menu .account-language .connect-box.connect a:before {
+      /* line 451, ../sass/partials/_header.scss */
+      #menu .account-language .close-connect.connect a:before {
         content: '';
         width: 0;
         height: 0;
